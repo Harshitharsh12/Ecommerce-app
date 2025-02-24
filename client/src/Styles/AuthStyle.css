@@ -1,0 +1,17 @@
+.Auth-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.395),rgba(255, 255, 0, 0.413),rgba(0, 0, 255, 0.45)); */
+    background-image: linear-gradient(to bottom, rgba(255, 166, 0, 0.822),rgba(255, 255, 255, 0.872),rgba(0, 128, 0, 0.836));
+  
+  }
+  .header{
+    padding-top: 10px;
+    padding-bottom: 25px;
+    font-family: Georgia, serif;
+  }
+  .ab{
+    height: 70vh;
+  }
