@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layouts/Layout";
 import AdminMenu from "../../components/Layouts/AdminMenu";
 
-const Products = () => {
+const Users = () => {
   return (
     <Layout title={"Dashboard - All Users"}>
       <div className="container-fluid m-3 p-3">
@@ -19,4 +19,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Users;

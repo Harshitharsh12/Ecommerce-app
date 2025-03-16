@@ -16,12 +16,25 @@ import CreateProduct from "./pages/admin/CreateProduct";
 import Users from "./pages/admin/Users";
 import Orders from "./pages/user/Orders";
 import Profile from "./pages/user/Profile";
+import Products from "./pages/admin/Products";
+import UpdateProduct from "./pages/admin/UpdateProduct";
+import Search from "./pages/Search";
+import ProductDetails from "./pages/ProductDetails";
+import Categories from "./pages/Categories";
+import SingleCategory from "./pages/SingleCategory";
+import CartPage from "./pages/CartPage";
+import AdminOrders from "./pages/admin/AdminOrders";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/product/:slug" element={<ProductDetails />} />
+        <Route path="/categories" element={<Categories />} />
+        <Route path="/category/:slug" element={<SingleCategory />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/search" element={<Search />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard/user" element={<PrivateRoute />}>
@@ -33,7 +46,10 @@ function App() {
           <Route path="" element={<AdminDashboard />} />
           <Route path="create-category" element={<CreateCategory />} />
           <Route path="create-product" element={<CreateProduct />} />
+          <Route path="products" element={<Products />} />
+          <Route path="product/:slug" element={<UpdateProduct />} />
           <Route path="users" element={<Users />} />
+          <Route path="orders" element={<AdminOrders />} />
         </Route>
         <Route path="/resetPassword" element={<ResetPassword />} />
         <Route path="/about" element={<About />} />

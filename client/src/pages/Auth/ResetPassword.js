@@ -68,7 +68,7 @@ const ResetPassword = () => {
               type="text"
               className="form-control"
               id="exampleInputAnswer1"
-              placeholder="what is your favourite-food?"
+              placeholder="What is your favourite-food?"
               required
             />
           </div>
