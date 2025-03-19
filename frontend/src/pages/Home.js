@@ -153,7 +153,7 @@ const Home = () => {
                   </p>
                   <div className="d-flex justify-content-between ">
                     <button
-                      class="card-link text-white p-2 btn-primary rounded"
+                      className="card-link text-white p-2 btn-primary rounded"
                       onClick={() => {
                         navigate(`/product/${p.slug}`);
                       }}
@@ -161,7 +161,7 @@ const Home = () => {
                       More Details
                     </button>
                     <button
-                      class="card-link text-white p-2 bg-secondary rounded "
+                      className="card-link text-white p-2 bg-secondary rounded "
                       onClick={() => {
                         setCart([...cart, p]);
                         localStorage.setItem(
